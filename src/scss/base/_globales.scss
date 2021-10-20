@@ -1,0 +1,18 @@
+@use './variables' as v;
+
+// fuentes
+
+$f1: 700 1.6rem / 2rem v.$fuenteBase;
+$f2: 400 1.4rem / 2rem v.$fuenteBase;
+
+// generales
+a{
+    text-decoration:none;
+    color: v.$negro;
+}
+ul{
+    list-style-type: none;
+}
+.t-centrado{
+    text-align: center;
+}

@@ -1,0 +1,38 @@
+@use "base" as v;
+
+.cont_n1{
+	display: block;
+}
+
+.ul_n1 {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	
+	@include v.tablet{
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+.li_n1 {
+	position: relative;
+	
+	&:hover > a{
+		background-color: v.$negro;
+		color: v.$blanco;
+	}
+
+	&:hover > .cont_n2{
+		display: block;
+	}
+	&>a {
+		display: block;
+		background-color: v.$blanco;
+		margin: 1rem;
+		padding: 1.2rem;
+		text-align: center;
+		box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.12), 0px 2px 3px rgba(0, 0, 0, 0.2);
+	}
+	
+}
